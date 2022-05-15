@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+
+<launch>
+
+	<include file="$(find tortoisebot_gazebo)/launch/officerobot_myworld.launch" />   
+ 	<include file="$(find tortoisebot_firmware)/launch/server_bringup.launch" />
+ 	<include file="$(find tortoisebot_navigation)/launch/officerobot_sim_navogation.launch" />
+ 
+ 	<node name="firebase_node" pkg="comm_firebase" type="firebase_node.py"/>
+      
+ 	<node name="nav_goals" pkg="simple_navigation_goals" type="nav_goals.py" />
+
+    	<node name="behaviour_planner" pkg="user_interface" type="behaviour_planner.py"/>
+	<node name="face_recog" pkg="recognition" type="face_recog.py"/>
+	<node name="speech_recog" pkg="recognition" type="speech_recog.py"/>
+
+</launch>
