@@ -1,0 +1,7 @@
+image: my_home_map_v1.pgm
+resolution: 0.010000
+origin: [-3.278288, -2.122970, 0.000000]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+

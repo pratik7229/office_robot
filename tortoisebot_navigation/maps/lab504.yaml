@@ -1,0 +1,7 @@
+image: lab504.pgm
+resolution: 0.010000
+origin: [-3.788210, -3.073722, 0.000000]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+
